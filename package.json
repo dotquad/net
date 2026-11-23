@@ -1,0 +1,75 @@
+{
+  "name": "@dotquad/net",
+  "version": "0.0.0",
+  "description": "A typed client for the Dotquad API, plus the small network helpers every Dotquad client shares: query detection, subnet math, reserved ranges and grade tones.",
+  "license": "MIT",
+  "author": "BinaryNoir Studios",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dotquad/net.git"
+  },
+  "homepage": "https://github.com/dotquad/net#readme",
+  "bugs": {
+    "url": "https://github.com/dotquad/net/issues"
+  },
+  "keywords": [
+    "dotquad",
+    "ip",
+    "ip-lookup",
+    "geolocation",
+    "asn",
+    "cidr",
+    "subnet",
+    "dns",
+    "api-client"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "prepare": "tsup",
+    "prepublishOnly": "npm run typecheck && npm run test && npm run build",
+    "release": "node scripts/release.js",
+    "release:patch": "node scripts/release.js patch",
+    "release:minor": "node scripts/release.js minor",
+    "release:major": "node scripts/release.js major"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.2",
+    "eslint": "^10.11.0",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.9.8",
+    "tsup": "^9.0.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.70.0",
+    "vitest": "^5.0.1"
+  }
+}
