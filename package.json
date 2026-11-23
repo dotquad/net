@@ -1,6 +1,6 @@
 {
   "name": "@dotquad/net",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A typed client for the Dotquad API, plus the small network helpers every Dotquad client shares: query detection, subnet math, reserved ranges and grade tones.",
   "license": "MIT",
   "author": "BinaryNoir Studios",
@@ -37,7 +37,8 @@
     "./package.json": "./package.json"
   },
   "files": [
-    "dist"
+    "dist",
+    "TRADEMARKS.md"
   ],
   "publishConfig": {
     "access": "public"

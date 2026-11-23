@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [0.1.0] - 2026-11-23
+
 ### Added
 
 - `createClient()`: a typed client for the Dotquad API endpoints Dotquad's browser, VS Code and Raycast extensions use (`me`, `ip`, `batch`, `usage`, and the DNS, WHOIS, report card, TLS, email, link and takeover checks), with `DotquadError` telling a used-up quota, a per-second limit, a paid-only endpoint and a bad key apart.
