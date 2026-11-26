@@ -10,8 +10,6 @@ It has no dependencies and runs in browsers and in Node 22 and later. It holds o
 npm install @dotquad/net
 ```
 
-Not on npm yet: the first release is coming.
-
 ## Use the API
 
 You need an API key. A free one covers 30,000 requests a month: [dotquad.app/signup](https://dotquad.app/signup/).
